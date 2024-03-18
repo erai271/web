@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 main {
 	flex: 1;
-	max-width: 50em;
+	max-width: 45em;
 }
 
 header {
