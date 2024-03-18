@@ -29,7 +29,6 @@ main {
 
 header {
 	background-color: #ffffff;
-	padding: 1em 2em;
 	margin: 1em;
 	text-align: left;
 }
@@ -49,13 +48,11 @@ header ul.links>li {
 
 header ul.links>li a {
 	color: #252525;
-	padding: 1em 2em;
 	display: block;
 }
 
 article {
 	background-color: #ffffff;
-	padding: 1em 2em;
 	margin: 1em;
 	text-align: left;
 }
