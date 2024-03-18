@@ -133,6 +133,7 @@ blockquote {
 
 .col {
 	flex: 1;
+	align-self: center;
 }
 
 .pad {
