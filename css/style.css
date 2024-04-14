@@ -79,7 +79,7 @@ footer {
 	text-align: center;
 }
 
-code, pre {
+pre {
 	white-space: pre-wrap;
 	font-family: monospace;
 	background-color: #f4f4ff;
@@ -93,14 +93,16 @@ pre {
 	border-radius: 4pt;
 }
 
-code {
-	display: inline;
-	padding: 2pt 3pt 1pt;
-	border: 1pt solid #ccc;
-	border-radius: 4pt;
+table, th, td {
+	border: 1px solid #000000;
 }
 
-pre .prompt, code .prompt {
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+pre .prompt {
 	user-select: none;
 }
 
@@ -166,5 +168,9 @@ blockquote {
 
 	a:visited {
 		color: #8466cc;
+	}
+
+	table, th, td {
+		border: 1px solid #eeeeee;
 	}
 }
