@@ -79,11 +79,6 @@ footer {
 	text-align: center;
 }
 
-footer a, footer a:visited {
-	color: #000000;
-	text-decoration: none;
-}
-
 code, pre {
 	white-space: pre-wrap;
 	font-family: monospace;
@@ -162,10 +157,6 @@ blockquote {
 	}
 
 	header ul.links>li a {
-		color: #eeeeee;
-	}
-
-	footer a, footer a:visited {
 		color: #eeeeee;
 	}
 
