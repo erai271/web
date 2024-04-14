@@ -29,9 +29,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
-main {
-}
-
 header {
 	margin: 1em;
 	text-align: left;
@@ -93,13 +90,24 @@ pre {
 	border-radius: 4pt;
 }
 
-table, th, td {
-	border: 1px solid #000000;
+th, td {
+	text-align: center;
+  padding: 0.25em;
+	border: 1px solid #888888;
+  vertical-align: center;
+}
+
+th .l, td .l {
+	text-align: left;
+}
+
+th .r, td .r {
+	text-align: right;
 }
 
 table {
 	border-collapse: collapse;
-	margin: 0 auto;
+	margin: 1em auto;
 }
 
 pre .prompt {
@@ -170,7 +178,7 @@ blockquote {
 		color: #8466cc;
 	}
 
-	table, th, td {
-		border: 1px solid #eeeeee;
+	th, td {
+	  border: 1px solid #888888;
 	}
 }
