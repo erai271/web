@@ -97,12 +97,16 @@ th, td {
   vertical-align: center;
 }
 
-th .l, td .l {
+.l {
 	text-align: left;
 }
 
-th .r, td .r {
+.r {
 	text-align: right;
+}
+
+.c {
+  text-align: center;
 }
 
 table {
@@ -121,7 +125,6 @@ blockquote {
 }
 
 .pfp {
-	margin: 1em;
 	width: 200px;
 	height: 200px;
 	overflow: hidden;
@@ -149,6 +152,10 @@ blockquote {
 
 .pad {
 	padding: 1em 2em;
+}
+
+li {
+  padding: 2pt;
 }
 
 .nogrow {
