@@ -125,6 +125,7 @@ blockquote {
 }
 
 .pfp {
+  margin: 1em;
 	width: 200px;
 	height: 200px;
 	overflow: hidden;
@@ -154,8 +155,8 @@ blockquote {
 	padding: 1em 2em;
 }
 
-li {
-  padding: 2pt;
+.linkboard {
+  margin: 0.75em 0px;
 }
 
 .nogrow {
