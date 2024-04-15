@@ -1,5 +1,8 @@
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
-	justify-content: center;
 	line-height: 1.4;
 	color: #252525;
 	font-family: sans-serif;
@@ -7,11 +10,12 @@ body {
 	max-width: 45em;
 }
 
-h1, h2, header p {
+h1, h2 {
 	border-bottom: 1pt solid #888888;
 }
 
-header p {
+.title {
+	border-bottom: 1pt solid #888888;
 	margin-top: 0.7em;
 	margin-bottom: 0.7em;
 	font-size: 2em;
