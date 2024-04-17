@@ -128,7 +128,12 @@ blockquote {
 	margin: 1em 0px;
 }
 
+img {
+  display: inline-block;
+}
+
 .pfp {
+  display: inline-block;
   margin: 1em;
 	width: 200px;
 	height: 200px;
