@@ -15,6 +15,7 @@ SOURCES:=$(shell \
 	-printf '%P\n' \
 )
 TARGETS:=$(SOURCES:%=build/%)
+TARGETS+=build/sitemap.txt
 
 all: $(TARGETS)
 
@@ -27,6 +28,11 @@ clean:
 build/%.html: %.html render.sh css/style.css
 	@mkdir -p $(dir $@)
 	./render.sh $< > $@
+
+build/sitemap.txt: $(SOURCES)
+	@mkdir -p $(dir $@)
+	@printf 'https://omiltem.net/%s\n' $^ | grep '\.html$$' > $@
+	@echo 'map > sitemap.txt'
 
 build/%: %
 	@mkdir -p $(dir $@)
