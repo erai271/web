@@ -31,7 +31,7 @@ build/%.html: %.html render.sh css/style.css
 
 build/sitemap.txt: $(SOURCES)
 	@mkdir -p $(dir $@)
-	@printf 'https://omiltem.net/%s\n' $^ | grep '\.html$$' > $@
+	@printf 'https://omiltem.net/%s\n' $^ | grep '\.html$$' | sed -e 's/\/index.html$$/\//' > $@
 	@echo 'map > sitemap.txt'
 
 build/%: %
