@@ -23,7 +23,7 @@ clean:
 .PHONY: all clean
 .SUFFIXES:
 
-build/%.html: %.html render.sh
+build/%.html: %.html render.sh css/style.css
 	@mkdir -p $(dir $@)
 	./render.sh $< > $@
 

@@ -8,7 +8,6 @@ if [ $# -ne 1 ]; then
 fi
 
 title="asdf &mdash; Omiltem"
-style="/css/style.css?t=$(date -r css/style.css +%s)"
 thumbnail="https://omiltem.net/about/pfp.jpg"
 description=""
 copyright="2024"
@@ -34,8 +33,8 @@ cat << EOF
     <meta property="og:title" content="${title}">
     <meta property="og:description" content="${description}">
     <meta name="description" content="${description}">
-    <link rel="stylesheet" href="${style}">
     <link rel="icon" href="/favicon.png">
+    <style>$(cat css/style.css)</style>
 $(sed -ne '/<head>/,/<\/head>/p' "$1" | sed -e '1d;$d')
   </head>
   <body>
