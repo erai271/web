@@ -11,6 +11,7 @@ title="asdf &mdash; Omiltem"
 thumbnail="https://omiltem.net/about/pfp.jpg"
 description=""
 copyright="2024"
+canonical="$(echo "https://omiltem.net/$1" | sed -e 's/\/index.html$/\//')"
 
 eval "$(sed -e '/^$/,$d' "$1")"
 
@@ -33,6 +34,7 @@ cat << EOF
     <meta property="og:title" content="${title}">
     <meta property="og:description" content="${description}">
     <meta name="description" content="${description}">
+    <link rel="canonical" href="${canonical}">
     <link rel="shortcut icon" type="image/png" href="data:image/png;base64,$(base64 -w0 favicon.png)">
     <style>$(cat css/style.css)</style>
 $(sed -ne '/<head>/,/<\/head>/p' "$1" | sed -e '1d;$d')
