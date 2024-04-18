@@ -10,6 +10,7 @@ SOURCES:=$(shell \
 		-or -name '*.jpg' \
 		-or -name '*.css' \
 		-or -name '*.html' \
+		-or -name '*.txt' \
 	\) \
 	-printf '%P\n' \
 )
