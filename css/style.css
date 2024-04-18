@@ -3,110 +3,110 @@ html {
 }
 
 body {
-	line-height: 1.4;
-	color: #252525;
-	font-family: sans-serif;
-	margin: 0 auto;
-	max-width: 45em;
+  line-height: 1.4;
+  color: #252525;
+  font-family: sans-serif;
+  margin: 0 auto;
+  max-width: 45em;
 }
 
 h1, h2 {
-	border-bottom: 1pt solid #888888;
+  border-bottom: 1pt solid #888888;
 }
 
 .title {
-	border-bottom: 1pt solid #888888;
-	margin-top: 0.7em;
-	margin-bottom: 0.7em;
-	font-size: 2em;
-	font-family: serif;
+  border-bottom: 1pt solid #888888;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  font-size: 2em;
+  font-family: serif;
 }
 
 footer {
-	border-top: 1pt solid #888888;
-	margin: 1em 0px;
-	padding-top: 1em;
+  border-top: 1pt solid #888888;
+  margin: 1em 0px;
+  padding-top: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: serif;
-	font-weight: 300;
+  font-family: serif;
+  font-weight: 300;
 }
 
 header {
-	margin: 1em 0px;
-	text-align: left;
+  margin: 1em 0px;
+  text-align: left;
 }
 
 header ul.links {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	margin: -.5em 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: -.5em 0px;
 }
 
 header ul.links>li {
-	flex: 1;
-	list-style: none;
-	text-align: center;
+  flex: 1;
+  list-style: none;
+  text-align: center;
 }
 
 header ul.links>li a {
-	color: #252525;
-	display: block;
+  color: #252525;
+  display: block;
 }
 
 article {
-	margin: 1em 0px;
-	text-align: left;
+  margin: 1em 0px;
+  text-align: left;
 }
 
 a {
-	color: #4070c0;
-	text-decoration: none;
+  color: #4070c0;
+  text-decoration: none;
 }
 
 a:visited {
-	color:#4007c0;
+  color:#4007c0;
 }
 
 a:hover {
-	color:#cc0f50;
-	text-decoration: underline;
+  color:#cc0f50;
+  text-decoration: underline;
 }
 
 footer {
-	clear: both;
-	text-align: center;
+  clear: both;
+  text-align: center;
 }
 
 pre {
-	white-space: pre-wrap;
-	font-family: monospace;
-	background-color: #f4f4ff;
-	color: #000000;
+  white-space: pre-wrap;
+  font-family: monospace;
+  background-color: #f4f4ff;
+  color: #000000;
 }
 
 pre {
-	padding: 1em;
-	margin-left: 0em;
-	overflow: auto;
-	border-radius: 4pt;
+  padding: 1em;
+  margin-left: 0em;
+  overflow: auto;
+  border-radius: 4pt;
 }
 
 th, td {
-	text-align: center;
+  text-align: center;
   padding: 0.25em;
-	border: 1px solid #888888;
+  border: 1px solid #888888;
   vertical-align: center;
 }
 
 .l {
-	text-align: left;
+  text-align: left;
 }
 
 .r {
-	text-align: right;
+  text-align: right;
 }
 
 .c {
@@ -114,18 +114,18 @@ th, td {
 }
 
 table {
-	border-collapse: collapse;
-	margin: 1em auto;
+  border-collapse: collapse;
+  margin: 1em auto;
 }
 
 pre .prompt {
-	user-select: none;
+  user-select: none;
 }
 
 blockquote {
-	border-left: #d0d0ff 4pt solid;
-	padding: 4pt;
-	margin: 1em 0px;
+  border-left: #d0d0ff 4pt solid;
+  padding: 4pt;
+  margin: 1em 0px;
 }
 
 img {
@@ -135,11 +135,11 @@ img {
 .pfp {
   display: inline-block;
   margin: 1em;
-	width: 200px;
-	height: 200px;
-	overflow: hidden;
-	border: 0px solid #000000;
-	border-radius: 1em;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 0px solid #000000;
+  border-radius: 1em;
 }
 
 p {
@@ -148,25 +148,25 @@ p {
 }
 
 @media (max-width: 550px) {
-	.row {
-		display: block;
-	}
+  .row {
+    display: block;
+  }
 }
 
 @media (min-width: 550px) {
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-	}
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .col {
-	flex: 1;
-	align-self: center;
+  flex: 1;
+  align-self: center;
 }
 
 .pad {
-	padding: 1em 2em;
+  padding: 1em 2em;
 }
 
 .linkboard {
@@ -174,33 +174,33 @@ p {
 }
 
 .nogrow {
-	flex-grow: 0;
+  flex-grow: 0;
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
-		background-color: #202020;
-		color: #eeeeee;
-	}
+  body {
+    background-color: #202020;
+    color: #eeeeee;
+  }
 
-	code, pre {
-		background-color: #1e1e33;
-		color: #eeeeee;
-	}
+  code, pre {
+    background-color: #1e1e33;
+    color: #eeeeee;
+  }
 
-	header ul.links>li a {
-		color: #eeeeee;
-	}
+  header ul.links>li a {
+    color: #eeeeee;
+  }
 
-	a {
-		color: #8ea5cc;
-	}
+  a {
+    color: #8ea5cc;
+  }
 
-	a:visited {
-		color: #8466cc;
-	}
+  a:visited {
+    color: #8466cc;
+  }
 
-	th, td {
-	  border: 1px solid #888888;
-	}
+  th, td {
+    border: 1px solid #888888;
+  }
 }
