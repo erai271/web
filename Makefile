@@ -27,7 +27,7 @@ clean:
 build/%.html: %.html render.sh css/style.css
 	@mkdir -p $(dir $@)
 	./render.sh $< > $@
-	@gzip -9k $@
+	@gzip -9fk $@
 
 build/sitemap.txt: $(SOURCES)
 	@mkdir -p $(dir $@)
@@ -37,7 +37,7 @@ build/sitemap.txt: $(SOURCES)
 build/%.txt: %.txt
 	@mkdir -p $(dir $@)
 	cp $< $@
-	@gzip -9k $@
+	@gzip -9fk $@
 
 build/%: %
 	@mkdir -p $(dir $@)
