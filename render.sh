@@ -7,7 +7,7 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-title="asdf &mdash; Omiltem"
+title="Untitled"
 thumbnail="https://omiltem.net/about/pfp.jpg"
 description=""
 copyright="2024"
@@ -24,7 +24,7 @@ cat << EOF
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>${title}</title>
+    <title>${title} &mdash; Omiltem</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="twitter:card" content="summary">
