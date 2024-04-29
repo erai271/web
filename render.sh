@@ -23,6 +23,9 @@ fi
 cat << EOF
 <!DOCTYPE html>
 <html lang="en">
+<!--
+$(cat LICENSE)
+-->
   <head>
     <title>${title} &mdash; Omiltem</title>
     <meta charset="utf-8">
