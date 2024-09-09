@@ -1,5 +1,5 @@
 #!/bin/bash
-set -uex
+set -ue
 if [ $# -ne 1 ]; then
   echo "Usage: ./deploy.sh <host>"
   exit 1

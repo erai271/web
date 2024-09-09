@@ -48,7 +48,7 @@ $(sed -ne '/<head>/,/<\/head>/p' "$1" | sed -e '1d;$d')
       <nav>
         <ul class="links">
           <li><a href="/">HOME</a></li>
-          <li><a href="https://git.sr.ht/~erai">CODE</a></li>
+          <li><a href="https://github.com/erai271">CODE</a></li>
           <li><a href="/about/">ABOUT</a></li>
         </ul>
       </nav>
