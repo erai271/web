@@ -38,7 +38,7 @@ $(cat LICENSE)
     <meta property="og:description" content="${description}">
     <meta name="description" content="${description}">
     <link rel="canonical" href="${canonical}">
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,$(base64 -w0 favicon.png)">
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,$(base64 < favicon.png | tr -d '\n')">
     <style>$(cat css/style.css)</style>
 $(sed -ne '/<head>/,/<\/head>/p' "$1" | sed -e '1d;$d')
   </head>

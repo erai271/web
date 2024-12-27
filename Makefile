@@ -1,17 +1,19 @@
 SOURCES:=$(shell \
-	find . -not \( \
+	find \
+		. \
+		-not \( \
+			\( \
+				-name .git \
+				-or -name build \
+			\) -prune \
+		\) \
 		\( \
-			-name .git \
-			-or -name build \
-		\) -prune \
-	\) \( \
-		-name '*.ico' \
-		-or -name '*.png' \
-		-or -name '*.jpg' \
-		-or -name '*.html' \
-		-or -name '*.txt' \
-	\) \
-	-printf '%P\n' \
+			-name '*.ico' \
+			-or -name '*.png' \
+			-or -name '*.jpg' \
+			-or -name '*.html' \
+			-or -name '*.txt' \
+		\) \
 )
 TARGETS:=$(SOURCES:%=build/%)
 TARGETS+=build/sitemap.txt
